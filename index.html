@@ -10,6 +10,7 @@
         background-color: #FDEFC8;
         margin: 0;
         padding: 0;
+        position: relative;
       }
       h2 {
         font-family: "Sen", sans serif;
@@ -147,7 +148,26 @@
         justify-content: center;
         align-items: center;
         margin: 0px 500px 90px 500px;
+        
       }    
+      .div-bottom-flowers {
+        display: flex;
+        justify-content: center;
+      }
+      .bottom-flowers {      
+        width: 90%;
+        height: auto;
+        
+        position: absolute;
+        bottom: 60px;
+        z-index: -1; /*
+          Code copied from: https://www.shecodes.io/athena/4380-how-to-set-an-image-behind-text-with-z-index#:~:text=The%20correct%20way%20to%20send,CSS%20code%20is%20given%20below.
+          Author: SheCodes
+          Name: How to Set an Image Behind Text with Z-Index
+          Description: Explains how to make things go behind other items
+          Date retrieved: 12/08/24
+          */
+      }
     </style>
   </head>
   <body>
@@ -165,7 +185,11 @@
     <div class="pages">
       <img class="page-header" src="About Me Letter REAL.jpg" alt="About Me section in letter format">
     </div>
-
+    
+    <div class="div-bottom-flowers">
+      <img class="bottom-flowers" src="Sakura Bottom.png" alt="Pink Sakura flowers at the bottom of page">
+    </div>
+    
     <div class="projects-in-pages">
       <img class="page-header" src="https://media1.tenor.com/m/IRXV5uXVTqMAAAAd/keyaan-john-wick.gif" alt="Jogn Wick, played by actor Keanu Reeves almost bowing with text saying 'THANK YOU'">
     </div>
